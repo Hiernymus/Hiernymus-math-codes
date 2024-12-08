@@ -5,6 +5,6 @@ def interation(f,x,a,t):
     df = f.diff(x)
     while j < t:
         print("z")
-        a = a - f.subs(x=a)/df.subs(x=a)
+        a = n(a) - n(f.subs(x=a)/df.subs(x=a))
         j =j + 1
-    return a
+    return n(a)
