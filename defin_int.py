@@ -5,11 +5,11 @@ def function(x):
     return y
 
 int = [-1,1]
-dx = 0.000001
+dx = 0.00000001
 
-_y = [0]
+_y = 0
 _x = int[0]
 while (_x < int[1]):
-    _y.append(function(_x))
+    _y = add([_y,function(_x)])
     _x = add([_x,dx])
-print(add(_y)*dx)
+    print(_y*dx)
