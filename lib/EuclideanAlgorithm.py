@@ -17,4 +17,3 @@ def EuclideanAlgorithm(a,b):
     else:
             return EuclideanAlgorithm(b,r)
 
-print(EuclideanAlgorithm(66,99))
